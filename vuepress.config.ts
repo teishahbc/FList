@@ -52,7 +52,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
         {
-      mountPath: "/Latest",
+      mountPath: "/Husi",
       analysis: githubReleasesFilesAnalysis({ user: "xchacha20-poly1305", repository: "husi" }),
       downProxy: cloudflarePagesDownProxy(),
     },
