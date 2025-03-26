@@ -53,36 +53,61 @@ export default defineUserConfig({
       analysis: githubReleasesFilesAnalysis({ user: "MatsuriDayo", repository: "NekoBoxForAndroid" }),
       downProxy: cloudflarePagesDownProxy(),
     },
+                        {
+      mountPath: "Browsers/brave",
+      analysis: githubReleasesFilesAnalysis({ user: "brave", repository: "brave-browser" }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+                            {
+      mountPath: "Browsers/Waterfox",
+      analysis: githubReleasesFilesAnalysis({ user: "BrowserWorks", repository: "Waterfox" }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+                                {
+      mountPath: "Browsers/Cromite",
+      analysis: githubReleasesFilesAnalysis({ user: "uazo", repository: "cromite" }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
+                                {
+      mountPath: "Browsers/Zen",
+      analysis: githubReleasesFilesAnalysis({ user: "zen-browser", repository: "desktop" }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
     {
-      mountPath: "/FlClash",
+      mountPath: "clients/FlClash",
       analysis: githubReleasesFilesAnalysis({ user: "chen08209", repository: "FlClash" }),
       // 下载代理配置,支持多个平台，参考:https://jjaw.cn/2024/8/3/flist-config-porxy/
       // 这个是为了解决github的国内下载慢的问题，和跨域问题，建议配置，不然pdf，txt，md等文件因为跨域无法预览
       // 如果你使用的不是 cloudflare Pages 部署需要删掉这一行，因为如果不是cloudflare Pages部署，这个代理是无法正常工作的
       downProxy: cloudflarePagesDownProxy(),
     },
+                        {
+      mountPath: "clients/clash-nyanpasu",
+      analysis: githubReleasesFilesAnalysis({ user: "libnyanpasu", repository: "clash-nyanpasu" }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
                     {
-      mountPath: "/clash-verge-rev",
+      mountPath: "clients/clash-verge-rev",
       analysis: githubReleasesFilesAnalysis({ user: "clash-verge-rev", repository: "clash-verge-rev" }),
       downProxy: cloudflarePagesDownProxy(),
     },
                         {
-      mountPath: "/ClashMetaForAndroid",
+      mountPath: "clients/ClashMetaForAndroid",
       analysis: githubReleasesFilesAnalysis({ user: "MetaCubeX", repository: "ClashMetaForAndroid" }),
       downProxy: cloudflarePagesDownProxy(),
     },
             {
-      mountPath: "/Karing",
+      mountPath: "clients/Karing",
       analysis: githubReleasesFilesAnalysis({ user: "KaringX", repository: "karing" }),
       downProxy: cloudflarePagesDownProxy(),
     },
             {
-      mountPath: "/Exclave",
+      mountPath: "clients/Exclave",
       analysis: githubReleasesFilesAnalysis({ user: "dyhkwong", repository: "Exclave" }),
       downProxy: cloudflarePagesDownProxy(),
     },
                 {
-      mountPath: "/hiddify-app",
+      mountPath: "clients/hiddify-app",
       analysis: githubReleasesFilesAnalysis({ user: "hiddify", repository: "hiddify-app" }),
       downProxy: cloudflarePagesDownProxy(),
     },
