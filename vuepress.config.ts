@@ -53,10 +53,7 @@ export default defineUserConfig({
     },
         {
       mountPath: "/Latest",
-      analysis: fileUrlTreeAnalysis({
-        "/V2rayN": "https://github.com/2dust/v2rayN/releases/latest",
-        "/mihomo-party": "https://github.com/mihomo-party-org/mihomo-party/releases/latest"
-      }),
+      analysis: githubReleasesFilesAnalysis({ user: "xchacha20-poly1305", repository: "husi" }),
       downProxy: cloudflarePagesDownProxy(),
     },
   ])
