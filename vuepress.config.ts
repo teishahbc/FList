@@ -59,8 +59,8 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
                             {
-      mountPath: "Browsers/Waterfox",
-      analysis: githubReleasesFilesAnalysis({ user: "BrowserWorks", repository: "Waterfox" }),
+      mountPath: "Browsers/Floorp",
+      analysis: githubReleasesFilesAnalysis({ user: "Floorp-Projects", repository: "Floorp" }),
       downProxy: cloudflarePagesDownProxy(),
     },
                                 {
